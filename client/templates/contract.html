@@ -7,24 +7,44 @@
     <table class="table">
       <tbody>
           <tr>
-            <th scope="row">btc_price</th>
-            <td>{{tasks}}</td>
+            <th scope="row">BTC価格</th>
+            <td>
+              <form class="btc-price">
+                <input type="text" name="text" placeholder="例：50,000円" />
+              </form>
+            </td>
           </tr>
           <tr>
-            <th scope="row">btc_amount</th>
-            <td>{{btcAmount}}</td>
+            <th scope="row">BTC数量</th>
+            <td>
+              <form class="btc-amount">
+                <input type="text" name="text" placeholder="例：1 BTC" />
+              </form>
+            </td>
           </tr>
           <tr>
-            <th scope="row">expiration_date</th>
-            <td>{{expirationDate}}</td>
+            <th scope="row">実行日</th>
+            <td>
+              <form class="exerise-day">
+                <input type="text" name="text" placeholder="例：2016年4月25日" />
+              </form>
+            </td>
           </tr>
           <tr>
-            <th scope="row">premium</th>
-            <td>{{premium}}</td>
+            <th scope="row">プレミアム</th>
+            <td>
+              <form class="premium">
+                <input type="text" name="text" placeholder="例：5,000円" />
+              </form>
+            </td>
           </tr>
           <tr>
-            <th scope="row">position</th>
-            <td>{{position}}</td>
+            <th scope="row">ポジション</th>
+            <td>
+              <form class="position">
+                <input type="text" name="text" placeholder="例：buy" />
+              </form>
+            </td>
           </tr>
       </tbody>
     </table>

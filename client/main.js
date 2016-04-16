@@ -14,15 +14,19 @@ if (Meteor.isClient) {
     var IndexController = RouteController.extend({
         template: 'index'
     });
-    
+
     Router.map(function() {
-        this.route('monitor', { 
-            path: '/monitor', 
-            controller: MonitorController 
+        // this.route('root', {
+        //     path: '/',
+        //     controller: IndexController
+        // });
+        this.route('monitor', {
+            path: '/monitor',
+            controller: MonitorController
         });
-        this.route('contract', { 
-            path: '/contract', 
-            controller: ContractController 
+        this.route('contract', {
+            path: '/contract',
+            controller: ContractController
         });
         this.route('info', {
             path: '/info',
@@ -36,4 +40,3 @@ if (Meteor.isClient) {
 }
 
 Tasks = new Mongo.Collection("tasks");
-
