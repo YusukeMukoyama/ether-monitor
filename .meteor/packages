@@ -22,5 +22,6 @@ twbs:bootstrap
 ethereum:web3
 ethereum:accounts
 ethereum:blocks
+iron:router
 aldeed:autoform
 aldeed:collection2
