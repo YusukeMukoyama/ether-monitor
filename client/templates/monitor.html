@@ -1,22 +1,6 @@
 <template name="monitor">
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">Simple Ethereum Status Monitor</a>
-        </div>
-      </div>
-    </nav>
-
-    <main class="container-fluid">
-      <div class="row-fluid">
-        <div class="col-md-8 col-md-offset-2">
-          {{> nodeStatusComponent}}
-          {{> accountStatusComponent}}
-          {{> blockStatusComponent}}
-          {{> contractDeploy}}
-        </div>
-      </div>
-    </main>
-  </body>
+  {{> nodeStatusComponent}}
+  {{> accountStatusComponent}}
+  {{> blockStatusComponent}}
+  {{> contractDeploy}}
 </template>
