@@ -12,6 +12,10 @@ if (Meteor.isClient) {
         template: 'contract'
     });
 
+    var InfoController = RouteController.extend({
+        template: 'info'
+    });
+    
     var IndexController = RouteController.extend({
         template: 'index'
     });
@@ -26,6 +30,11 @@ if (Meteor.isClient) {
         this.route('contract', { 
             path: '/contract', 
             controller: ContractController 
+        });
+
+        this.route('info', {
+            path: '/info',
+            controller: InfoController
         });
 
         this.route('index', {

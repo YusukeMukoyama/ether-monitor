@@ -1,1 +1,5 @@
-// 後ほど使う
+Template.index.helpers({
+  accounts: function(){
+    return EthAccounts.find({});
+  }
+});
