@@ -22,3 +22,5 @@ twbs:bootstrap
 ethereum:web3
 ethereum:accounts
 ethereum:blocks
+aldeed:autoform
+aldeed:collection2
