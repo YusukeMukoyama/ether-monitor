@@ -1,0 +1,23 @@
+{
+   price: {
+      type: Number
+   },
+   amount: {
+      type: Number
+   },
+   premium: {
+      type: Number
+   },
+   Expiration: {
+      type: Date
+   },
+   Position: {
+      type: Boolean
+      autoform: {
+         type: "boolean-select",
+         trueLabel: “Buy",
+         falseLabel: "Sell",
+         firstOption: "(Please Choose a Position)"
+      }
+   }
+}

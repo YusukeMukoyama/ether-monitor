@@ -1,3 +1,36 @@
 <template name="contract">
-          <p>ここにコントラクトデプロイコードを入れる</p>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4>Contract Deploy</h4>
+    </div>
+
+    <table class="table">
+      <tbody>
+          <tr>
+            <th scope="row">btc_price</th>
+            <td>{{tasks}}</td>
+          </tr>
+          <tr>
+            <th scope="row">btc_amount</th>
+            <td>{{btcAmount}}</td>
+          </tr>
+          <tr>
+            <th scope="row">expiration_date</th>
+            <td>{{expirationDate}}</td>
+          </tr>
+          <tr>
+            <th scope="row">premium</th>
+            <td>{{premium}}</td>
+          </tr>
+          <tr>
+            <th scope="row">position</th>
+            <td>{{position}}</td>
+          </tr>
+      </tbody>
+    </table>
+<!-- デプロイボタンを設置
+  デプロイ時のメソッドは、contract_deploy.jsに記載する
+  http://qiita.com/azusa-kikuchi/items/405154b3619ca30ed14c
+-->
+  </div>
 </template>

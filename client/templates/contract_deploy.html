@@ -1,27 +1,30 @@
-<template name="contractDeploy">
+<template name="contract">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4>Contract Deploy</h4>
     </div>
-    <!-- tableではなくてフォームにしたほうがよい -->
+
     <table class="table">
       <tbody>
           <tr>
-            <!-- 各パラメーターを設置 
-            <th scope="row">param1</th>
-            <td>{{currentProvider}}</td>
+            <th scope="row">btc_price</th>
+            <td>{{tasks}}</td>
           </tr>
           <tr>
-            <th scope="row">param2</th>
-            <td>{{isMining}}</td>
+            <th scope="row">btc_amount</th>
+            <td>{{btcAmount}}</td>
           </tr>
           <tr>
-            <th scope="row">param3</th>
-            <td>{{currentHashrate}}</td>
+            <th scope="row">expiration_date</th>
+            <td>{{expirationDate}}</td>
           </tr>
           <tr>
-            <th scope="row">param4</th>
-            <td>{{currentPeerCount}}</td>  -->
+            <th scope="row">premium</th>
+            <td>{{premium}}</td>
+          </tr>
+          <tr>
+            <th scope="row">position</th>
+            <td>{{position}}</td>
           </tr>
       </tbody>
     </table>
