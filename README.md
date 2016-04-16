@@ -1,3 +1,3 @@
-# simple-eth-monitor
+# eth-monitor
 
 refetence:http://book.ethereum-jp.net/
