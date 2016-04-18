@@ -1,19 +1,21 @@
-Tasks = new Mongo.Collection("tasks");
-Template.contractDeploy.helpers({
-  tasks: function(){
-    return Tasks.find({});
-  },
-  btcPrice: function(){  //ファンクション名を記載 -> このファンクション名をtempleteのhtmlファイルが用いる
-    return Tasks.find({});
-    // return web3.currentProvider.host; //web3のメソッドを記載
-  },
-  isMining: function(){
-    return Session.get('isMining');
-  },
-  currentHashrate: function(){
-    return Session.get('isMining');
-  },
-  currentPeerCount: function(){
-    return Session.get('isMining');
-  }
-});
+if (Meteor.isClient) {
+  Tasks = new Mongo.Collection("tasks");
+
+//  var btc-price = $("#btc-price").val();
+ // var btc-price = $("#btc-price input[name=text]").val();
+  //Template.contract.ten = btc-price;
+  
+  Template.contract.events({
+    'click #btn': function(event, templates) {
+  //    var btc-price = $("#btc-price").val();
+      alert('デリバティブ商品が登録されました');
+     // alert(btc-price);
+    }
+  });
+
+  Template.contract.helpers({
+    tasks: function(){
+      return Tasks.find({});
+    }
+  });
+}

@@ -10,7 +10,7 @@
             <th scope="row">BTC価格</th>
             <td>
               <form class="btc-price">
-                <input type="text" name="text" placeholder="例：50,000円" />
+                <input id="btc-price" type="text" name="text" placeholder="例：50,000円" />
               </form>
             </td>
           </tr>
@@ -18,15 +18,15 @@
             <th scope="row">BTC数量</th>
             <td>
               <form class="btc-amount">
-                <input type="text" name="text" placeholder="例：1 BTC" />
+                <input type="text" name="text" id="btc-amount" placeholder="例：1 BTC" />
               </form>
             </td>
           </tr>
           <tr>
             <th scope="row">実行日</th>
             <td>
-              <form class="exerise-day">
-                <input type="text" name="text" placeholder="例：2016年4月25日" />
+              <form class="exercise-day">
+                <input type="text" name="text" id="exercise-day" placeholder="例：2016年4月25日" />
               </form>
             </td>
           </tr>
@@ -34,7 +34,7 @@
             <th scope="row">プレミアム</th>
             <td>
               <form class="premium">
-                <input type="text" name="text" placeholder="例：5,000円" />
+                <input type="text" name="text" id="premium" placeholder="例：5,000円" />
               </form>
             </td>
           </tr>
@@ -42,15 +42,14 @@
             <th scope="row">ポジション</th>
             <td>
               <form class="position">
-                <input type="text" name="text" placeholder="例：buy" />
+                <input type="text" name="text" id="position" placeholder="例：buy" />
               </form>
             </td>
           </tr>
       </tbody>
     </table>
-<!-- デプロイボタンを設置
-  デプロイ時のメソッドは、contract_deploy.jsに記載する
-  http://qiita.com/azusa-kikuchi/items/405154b3619ca30ed14c
--->
+    <!-- TODO:ボタンを中央に表示する -->
   </div>
+  <input type="submit" class="btn btn-success" id="btn" value="デリバティブ商品を登録する">
+  <p>{{ten}}</p>
 </template>
